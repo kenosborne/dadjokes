@@ -9,7 +9,7 @@
 export default {
     head() {
         return {
-            title: 'About the app'
+            title: 'About the app',
             meta: [
                 {
                     hid: 'description',
