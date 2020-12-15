@@ -1,13 +1,12 @@
 <template>
   <div class="container">
-    <app-header/>
+    <app-header>
     <Nuxt />
   </div>
 </template>
 
 <script>
 import appHeader from '../components/appHeader'
-import AppHeader from '../components/appHeader.vue'
 
 export default {
   components: {
