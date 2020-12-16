@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="OnSubmit">
+    <form @submit.prevent="onSubmit">
         <input type="text" v-model="text" placeholder="Search Jokes...">
         <input type="submit" value="Search Jokes">
     </form>
@@ -11,15 +11,15 @@ export default {
 
     data() {
         return {
-            text: ''
-        }
+            text: ""
+        };
     },
 
     methods: {
-        OnSubmit() {
-            this.$emit('search.text', this.text)
-            this.text = ''
+        onSubmit() {
+            this.$emit('search-text', this.text);
+            this.text = '';
         }
     }
-}
+};
 </script>
